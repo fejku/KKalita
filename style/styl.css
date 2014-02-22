@@ -1,0 +1,432 @@
+@font-face {
+  font-family: 'Oswald';
+  src: url('../font/Oswald-Light.ttf');
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    color: rgb(204, 204, 204);
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+
+    background-image: url("../obrazki/tlo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+body a:hover, a:active, a:focus {
+    color: rgb(47, 51, 54);
+}
+body a {
+    transition: background-color 0.2s linear 0s, color 0.2s linear 0s;
+    color: rgb(65, 140, 209);
+    text-decoration: none;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 
+{
+    color: rgb(170, 147, 66);
+    font-family: 'Oswald';
+}
+
+h2
+{
+    font-size: 30px;
+}
+
+h3
+{
+    font-size: 22px;
+}
+
+#pasekGora
+{
+    height: 40px;
+    border-bottom: 1px dashed rgb(170, 147, 66);
+    background: rgba(30, 32, 34, 0.8);
+}
+
+#pasekGora #logowanie
+{
+    width: 960px;
+    margin: 0px auto;
+    padding-right: 10px;
+    text-align: right;
+}
+
+#pasekGora #logowanie a
+{
+    font: 15px/40px 'Oswald', 'Sans-Serif';
+    color: rgb(170, 147, 66);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#glowny
+{
+    width: 960px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#glowny #logo
+{
+    height: 131px;
+    width: auto;
+    background: url("../obrazki/logo.png") no-repeat center rgba(30, 32, 34, 0.4);
+    margin-bottom: 10px;
+}
+
+#glowny #logo a
+{
+    display: block;
+    width: auto;
+    height: 131px;
+}
+
+#glowny #menu
+{
+    width: auto;
+    height: 45px;
+    background: url("../obrazki/menu.png") no-repeat center top;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#glowny #menu ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', Sans-Serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-shadow: rgb(47, 51, 53) 1px 1px 0px;
+}
+
+#glowny #menu ul li
+{
+    float: left;
+    position: relative;
+    border-right-color: rgb(72, 75, 77);
+    border-right-style: solid;
+    border-right-width: 1px;
+}
+
+#glowny #menu ul li a
+{
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 45px;
+    margin: 0;
+    padding: 0 18px 0 18px;
+}
+
+#glowny #zawartosc
+{
+    background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.9);
+}
+
+#glowny #stopka
+{
+    
+    height: 51px;
+    width: auto;
+    font: 14px/51px 'Arial', 'Helvatica', 'Sans-Serif';
+    background: url("../obrazki/stopka.png");
+    color: rgb(204, 204, 204);
+    text-align: right;
+    padding-right: 10px;
+}
+
+.wysrodkuj
+{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.MarginesyH2
+{
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+
+#projektyDodawanie
+{
+    padding-bottom: 10px;
+    background: none repeat scroll 0% 0% rgba(14, 42, 63, 0.8);
+}
+
+#tabelaProjektyDodawanie
+{
+    margin-top: 10px;
+    text-align: right;
+}
+
+#tabelaProjektyDodawanie tr
+{
+    
+}
+
+#tabelaProjektyDodawanie tr td
+{
+    padding-bottom: 7px;
+    padding-top: 7px;
+    padding-right: 7px;
+}
+
+#tabelaProjektyDodawanie .prawa
+{
+    width: 255px;
+}
+
+#projektyWyswietlanie
+{
+    padding-bottom: 15px;
+}
+
+#projektyWyswietlanie .projekt
+{
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px dashed rgb(170, 147, 66);
+    overflow: hidden;
+}
+
+#projektyWyswietlanie .projekt .tytul
+{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#projektyWyswietlanie .projekt .obrazek
+{
+    float: left;
+}
+
+#projektyWyswietlanie .projekt .obrazek img
+{
+    width: 160px;
+    vertical-align: top;
+}
+
+#projektyWyswietlanie .projekt .info
+{
+    float: none;
+    overflow: hidden;
+}
+
+#projektyWyswietlanie .projekt .info .naglowek
+{
+    width: 110px;
+    text-align: right;
+    font-weight: bold;
+    margin-left: 10px;
+    padding-bottom: 3px;
+    padding-right: 10px;
+    float: left;
+}
+
+#projektyWyswietlanie .projekt .info .zawartosc
+{
+    padding-bottom: 3px;
+    float: none;
+    overflow: hidden;
+}
+
+#projektyWyswietlanie .projekt .opcje
+{
+    padding-top: 5px;
+    text-align: right;
+    clear: both;
+}
+
+#projektyWyswietlanie .projekt .opcje form
+{
+    float: right;
+}
+
+#projektyWyswietlanie .projekt #edit_nazwa, #edit_opis
+{
+    width: 100%;
+}
+
+#projektyWyswietlanie .projekt #edit_opis
+{
+    height: 100px;
+    resize: none;
+}
+
+#DodajNews
+{
+    padding-right: 100px; 
+    text-align: right;
+}
+
+#DodajNews button
+{
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+#DodajNews button img
+{
+    width: 25px;
+    height: 25px;
+}
+
+#NewsWyswietlanie
+{
+    padding-bottom: 15px;
+}
+
+#NewsWyswietlanie .news
+{
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px dashed rgb(170, 147, 66);
+    overflow: hidden;
+}
+
+#NewsWyswietlanie .news .tytul
+{
+    text-align: left;
+    margin-bottom: 7px;
+}
+
+#NewsWyswietlanie .news .meta
+{
+    list-style-type: none;
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+#NewsWyswietlanie .news .meta li
+{
+    display: inline-block;
+    background-size: contain;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    padding: 3px 20px 3px 25px;
+}
+
+#NewsWyswietlanie .news .meta .data
+{
+    background-image: url('../obrazki/kalendarz.png');
+}
+
+#NewsWyswietlanie .news .meta .autor
+{
+    background-image: url('../obrazki/autor.png');
+}
+
+#NewsWyswietlanie .news .meta .dzial
+{
+    background-image: url('../obrazki/dzial.png');
+}
+
+#NewsWyswietlanie .news .tresc
+{
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+#NewsWyswietlanie .news .tagi
+{
+    padding-top: 10px;
+}
+
+#NewsWyswietlanie .news .opcje
+{
+    text-align: right;
+}
+
+#NewsWyswietlanie .news .opcje button
+{
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+#NewsWyswietlanie .news .opcje button img
+{
+    width: 25px;
+    height: 25px;
+}
+
+#strona1Obrazek
+{
+    float: left;
+    margin-right: 20px;
+}
+
+#strona1Obrazek img
+{
+    width: 200px;
+    height: 150px;
+}
+
+#strona1Tekst
+{
+    float: none;
+    overflow: hidden;
+    padding-top: 40px;
+}
+
+#strona1Tekst p
+{
+    font-weight: bold;
+}
+
+#strona2Obrazek
+{
+    float: right;
+    margin-left: 20px;
+}
+
+#strona2Obrazek img
+{
+    width: 200px;
+    height: 150px;
+}
+
+#strona2Tekst
+{
+    overflow: hidden;
+    padding-top: 50px;
+}
+
+#strona2Tekst p
+{
+    font-weight: bold;
+}
+
+
+.clear
+{
+    clear: both;
+}
