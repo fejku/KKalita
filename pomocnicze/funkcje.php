@@ -23,8 +23,9 @@
             $row = $stmt->fetch();
             return $row['ilosc'];
         } catch (PDOException $ex) {
-            die('CHUJ'.$ex);
+            die(':)'.$ex);
         }
+        
     }
     //END KOMENTARZE
     
